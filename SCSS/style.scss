@@ -161,23 +161,17 @@ body{
                                     cursor: pointer;
                                 }
                             }
-                        }
-
-                        
+                        }   
                     }
 
                     &:hover{ 
                         opacity: 0.9;
                         
                         .hover{
-                            opacity: 1;
-
-                            
+                            opacity: 1;    
                         }
                     }
-                }
-
-                
+                }    
             }
         }
     }
