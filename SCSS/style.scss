@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+$blue : #1976d2;
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    background: rgb(0, 0, 34);
+}
+
+
+.card{
+    width: 80%;
+    border: none;
+    margin: 40px 10%;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+
+    .tabbar{
+        width: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #ccc;
+            width: 100%;
+
+            .icon{
+                font-size: 30px;
+                color: #ccc;
+                transition: 0.4s all;
+                padding: 5px 36%;
+
+                &:hover{
+                    color: $blue;
+                    cursor: pointer;
+                    border-right: 4px solid $blue;
+                }
+
+                &.logo{
+                    color: $blue;
+                    font-size: 40px;
+                    margin-bottom: 20px;
+
+                    &:hover{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+
+        .pro-img img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid $blue;
+        }
+
+    }
+
+
+    .page{
+        display: block;
+        padding: 0 20px;
+        width: 100%;
+
+        .amout-img p{
+            font-weight: 500;
+            color: rgb(136, 136, 136);
+        }
+
+        .header-page{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            .header h1{
+                font-size: 40px;
+            }
+
+            .btn{
+                font-family: Poppins;
+                font-weight: 500;
+                padding: 5px 45px;
+                color: $blue;
+                font-size: 20px;
+                background: #fff;
+                border: 2px solid $blue;
+                transition: 0.4s all;
+
+                &:hover{
+                    background: $blue;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .images{
+            display: block;
+
+            .image-group{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .img{
+                    position: relative;
+                    width: 30%;
+                    height: 300px;
+                    margin: 20px;
+                    transition: 0.4s all;
+
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &.big{
+                        width: 63.5%;
+                    }
+
+                    .hover{
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        align-items: center;
+                        z-index: 1000;
+                        transition: 0.4s all;
+                        background: rgba(0, 0, 139, 0.2);
+                        justify-content: center;
+
+                        .icons-hover{
+                            display: flex;
+                            justify-content: center;
+
+                            i{
+                                margin: 0 20px;
+                                font-size: 40px;
+                                color: rgba(255, 255, 255, 0.8);
+                                transition: 0.4s all;
+
+                                &:hover{
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        
+                    }
+
+                    &:hover{ 
+                        opacity: 0.9;
+                        
+                        .hover{
+                            opacity: 1;
+
+                            
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
+
+
+
+
